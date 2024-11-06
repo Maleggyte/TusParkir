@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/Logo.png" alt="Logo" />
+        </div>
+        <div class="user-info">
+            <span class="date" style="border-radius: 10px;">30/10/24</span>
+            <span class="username" style="border-radius: 10px;">AKMAL</span>
+            <button class="logout-button" style="border-radius: 10px;">&#x21bb</button>
+        </div>
+    </header>
+
+    <body>
+        <div class="content">
+            <div class="menu-container">
+                <!-- Masuk Parkir Button -->
+                <a href="#masuk-parkir" class="menu-button">
+                    <img src="images/masuk.png" alt="Masuk Parkir Icon">
+                    <p>MASUK PARKIR</p>
+                </a>
+
+                <!-- Keluar Parkir Button -->
+                <a href="#keluar-parkir" class="menu-button">
+                    <img src="images/keluar.png" alt="Keluar Parkir Icon">
+                    <p>KELUAR PARKIR</p>
+                </a>
+
+                <!-- Registrasi Motor Button -->
+                <a href="#registrasi-motor" class="menu-button">
+                    <img src="images/regis.png" alt="Registrasi Motor Icon">
+                    <p>REGISTRASI MOTOR</p>
+                </a>
+
+                <!-- Riwayat Parkir Button -->
+                <a href="#riwayat-parkir" class="menu-button">
+                    <img src="images/history.png" alt="Riwayat Parkir Icon">
+                    <p>RIWAYAT PARKIR</p>
+                </a>
+            </div>
+
+            <!-- Tabel Riwayat Parkir -->
+            <div class="parking-history">
+                <div
+                    style="background-color: #b11016; color: white; padding: 10px; font-size: 18px; font-weight: bold; text-align: center;">
+                    RIWAYAT PARKIR
+                </div>
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>PLAT NOMOR</th>
+                            <th>IDENTITAS</th>
+                            <th>WAKTU MASUK</th>
+                            <th>WAKTU KELUAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>B1234XYZ</td>
+                            <td>AGUS</td>
+                            <td>30/10/24 08:00</td>
+                            <td>30/10/24 10:30</td>
+                        </tr>
+                        <tr>
+                            <td>D5678ABC</td>
+                            <td>ASYAM</td>
+                            <td>30/10/24 09:00</td>
+                            <td>30/10/24 11:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="background-color: rgb(38, 38, 38); color: gray; font-size: 12px;">*lihat semua riwayat parkir
+                    di menu "riwayat"</p>
+            </div>
+        </div>
+
+    </body>
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; copyrigthTUSPARKING2024</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

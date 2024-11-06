@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riwayat Parkir</title>
+    <link rel="stylesheet" href="riwayat.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/Logo.png" alt="TUSPARKING Logo" class="logo">
+        <div class="header-right">
+            <span class="date">30/10/24</span>
+            <span class="user">AKMAL</span>
+            <button class="logout-button">&#x21bb;</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Table Section -->
+        <div class="table-container">
+            <div class="table-header">RIWAYAT PARKIR</div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>PLAT NOMOR</th>
+                        <th>NIM_MASUK</th>
+                        <th>NIP_MASUK</th>
+                        <th>WAKTU_MASUK</th>
+                        <th>NIM_KELUAR</th>
+                        <th>WAKTU_KELUAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Table rows go here -->
+                </tbody>
+            </table>
+            <button class="print-button" onclick="printReport()">CETAK LAPORAN</button>
+        </div>
+
+        <!-- Search Section -->
+        <div class="search-container">
+            <h3>CARI PLAT NOMOR</h3>
+            <input type="text" placeholder="PLAT" id="plate">
+            <input type="text" placeholder="IDENTITAS" id="identity">
+            <input type="date" id="date">
+            <button class="search-button" onclick="search()">🔍</button>
+        </div>
+    </div>
+
+
+    <script src="scripts.js"></script>
+    <footer>
+        &copy;copyrightTUSPARKING2024
+    </footer>
+</body>
+
+</html>

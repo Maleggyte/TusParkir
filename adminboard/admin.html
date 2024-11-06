@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Board</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/Logo.png" alt="TUSPARKING Logo" class="logo">
+        <div class="header-right">
+            <span class="date">30/10/24</span>
+            <span class="user">AKMAL</span>
+            <button class="logout-button">&#x21bb;</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>NIP</th>
+                        <th>Nama</th>
+                        <th>Jenis Kelamin</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable">
+                    <!-- Rows will be added here -->
+                </tbody>
+            </table>
+        </div>
+
+        <div class="form-container">
+            <h2>FORM DATA SATPAM</h2>
+            <form id="satpamForm">
+                <label for="nip">NIP</label>
+                <input type="text" id="nip" name="nip" required>
+
+                <label for="nama" style="margin-right: 268px;">Nama</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="jenisKelamin">Jenis Kelamin</label>
+                <select id="jenisKelamin" name="jenisKelamin">
+                    <option value="LAKI-LAKI">LAKI-LAKI</option>
+                    <option value="PEREMPUAN">PEREMPUAN</option>
+                </select>
+
+                <button type="button" onclick="addData()">SAVE</button>
+            </form>
+        </div>
+    </div>
+    <script src="admin.js"></script>
+    <footer>
+        &copy;copyrightTUSPARKING2024
+    </footer>
+</body>
+
+</html>

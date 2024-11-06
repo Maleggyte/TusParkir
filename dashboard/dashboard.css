@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 50px;
+}
+
+.logo img {
+    width: 200px;
+    justify-content: center;
+    margin-top: 20px;
+    display: flex;
+}
+
+.icon {
+    padding: 15px 0;
+    font-size: 20px;
+    text-align: center;
+    color: #bdc3c7;
+    text-decoration: none;
+}
+
+.icon.active,
+.icon:hover {
+    color: #ecf0f1;
+}
+
+/* Container for the buttons */
+.menu-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 150px;
+    margin-left: 130px;
+}
+
+/* Button styles */
+.menu-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 255px;
+    /* Set the width of the button */
+    height: 255px;
+    /* Set the height of the button */
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Image styles */
+.menu-button img {
+    width: 100%;
+    /* Adjust this percentage as needed to fit within the button */
+    height: auto;
+    /* Keep aspect ratio */
+    max-height: 80%;
+    /* Make sure it doesn't exceed button height */
+    object-fit: contain;
+    /* Ensures the image scales without cropping */
+    margin-bottom: 8px;
+    /* Space between image and text */
+}
+
+/* Button text */
+.menu-button p {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+header p {
+    color: #666;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date,
+.username {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.logout-button {
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sidebar {
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    width: 250px;
+    background-color: #e0e0e0;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: calc(100% - 50px);
+    background-color: #fff;
+    margin-bottom: 15px;
+}
+
+/* Gaya untuk kontainer tabel */
+/* CSS untuk bagian Riwayat Parkir */
+.parking-history {
+    width: 100%;
+    max-width: 600px;
+    /* Sesuaikan dengan lebar yang Anda inginkan */
+    margin: 20px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 180px;
+    margin-right: 130px;
+}
+
+.parking-history h2 {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+
+}
+
+.parking-history table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.parking-history th,
+.parking-history td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.parking-history th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.parking-history tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.parking-history p {
+    color: gray;
+    font-size: 12px;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    
+}
+
+#waveCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}

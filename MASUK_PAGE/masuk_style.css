@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+                .header {
+                    background-color: #333;
+                    color: #fff;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 20px;
+                    align-items: center;
+                }
+        
+                .title {
+                    font-size: 1.5em;
+                }
+                
+                .logo {
+                    width: 10%;
+                }
+        
+                .parking-logo {
+                    color: red;
+                    font-weight: bold;
+                }
+        
+                .header-right {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+        
+                .date,
+                .user {
+                    background-color: #555;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+        
+                .logout-button {
+                    background-color: red;
+                    color: #fff;
+                    border: none;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+        .dashboard {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dashboard .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .dashboard .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .dashboard .user-info .date {
+            font-size: 0.9em;
+        }
+
+        .dashboard .user-info .logout {
+            background-color: #e44c4c;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+
+        .container {
+            max-width: 800px;
+            margin: 100px auto;
+            padding: 50px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            margin-top: 55px;
+        }
+
+        .container h1 {
+             font-size: 1.8em;
+             text-align: center;
+             margin-top: 80px;
+         }
+
+        .form-group {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"] {
+            width: 35%;
+            padding: 10px;
+            border: 1px solid #333c;
+            background-color: #c7c6c6;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        .submit-btn {
+            width: 35%;
+            padding: 10px;
+            font-size: 1em;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .submit-btn:hover {
+            background-color: #333;
+        }
+
+        .note {
+            color: red;
+            font-size: 0.8em;
+            margin-top: 15px;
+        }
+
+        footer {
+           background-color: #333;
+           color: #fff;
+           text-align: center;
+           padding: 30px;
+           font-size: 1em;
+        }

@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+.logo {
+    width: 10%;
+}
+
+.parking-logo {
+    color: red;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date,
+.user {
+    background-color: #555;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.logout-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.table-container {
+    width: 500px;
+    margin-left: 250px;
+    margin-top: 80px;
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(192, 190, 190);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+td:last-child {
+    text-align: center;
+}
+
+.delete-btn {
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.form-container {
+    width: 500px;
+    padding: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 70px;
+    border: 1px solid rgb(192, 190, 190);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 2.7rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #333;
+    margin-right: 220px;
+}
+
+input,
+select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #cecece;
+}
+
+button {
+    width: 80%;
+    padding: 10px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+ footer {
+     background-color: #333;
+     color: #fff;
+     text-align: center;
+     padding: 30px;
+     font-size: 1em;
+     margin-top: 50px;
+ }
